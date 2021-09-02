@@ -1,0 +1,1490 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    margin: 0 auto;;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 60px;;
+}
+
+.title h2{
+    font-size: 35px;
+    font-family: 'Fugaz One', cursive;
+}
+
+.title p{
+    font-size: 14px;
+    width: 565px;
+    margin: 0 auto;
+}
+
+
+/*----------------------------------------
+        navbar css start
+------------------------------------------*/
+
+#navbar{
+    width: 100%;
+}
+
+nav{
+    width: 100%;
+    background: rgba(34, 34, 34, 0);
+    border-bottom: 1px solid red;
+    z-index: 9;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: .5s
+}
+
+nav ul li a{
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Fugaz One', cursive;
+    margin-left: 32px;
+    position: relative;
+    transition: .8s;
+}
+
+nav ul li a:hover{
+    color: red;
+}
+
+nav ul li .active{
+    color: red;
+}
+
+nav ul li a:hover:after{
+    width: 100%;
+}
+
+nav ul li .active:after{
+    width: 100%;
+}
+
+nav ul li a:hover{
+    color: red;
+}
+
+nav ul li a:after{
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    height: 3px;
+    width: 0;
+    content: "";
+    background: red;
+    transition: .8s;
+}
+
+nav ul li .active{
+    color: red;
+}
+
+
+
+
+/*----------------------------------------
+        nav-bar css end
+------------------------------------------*/
+/*----------------------------------------
+        fixed-navbar css start
+------------------------------------------*/
+
+.fixed{
+    position: fixed !important;
+    height: 78px;
+    background: rgba(34, 34, 34, 1);
+    z-index: 9999
+}
+
+/*----------------------------------------
+        fixed-navbar css end
+------------------------------------------*/
+/*----------------------------------------
+        banner-part css start
+------------------------------------------*/
+
+#banner-part{
+    position: relative;
+    margin-top: -78px;
+    position: relative;
+}
+
+#banner-part .banner{
+    background: url(../image/Esports.jfif)no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+#banner-part .photo{
+    background: url(../image/https___specials-images.forbesimg.com_imageserve_5fcab9df4bf5afdd041aa463_0x0_2.jpg)no-repeat center;
+}
+
+#banner-part .banner .overlay{
+    background: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 246px;
+    padding-bottom: 187px;
+}
+#banner-part .banner .overlay h1{
+    font-family: 'Fugaz One', cursive;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 500;
+}
+
+#banner-part .banner .overlay h2{
+    font-family: 'Fugaz One', cursive;
+    font-size: 55px;
+    font-weight: bold;
+    color: red;
+}
+
+#banner-part .banner .overlay p{
+    width: 535px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+#banner-part .banner .overlay a{
+    display: inline-block;
+    padding: 20px;
+    color: #fff;
+    border: 2px solid #fff;
+    text-decoration: none;
+    margin-top: 30px;
+    transition: .8s;
+    margin-left: 20px;
+}
+
+#banner-part .banner .overlay .hire{
+    padding-top: 20px;
+    padding-left: 34px;
+    padding-right: 34px;
+}
+
+#banner-part .banner .overlay a:hover{
+    background: red;
+    color: #000;
+    border: 2px solid transparent;
+}
+
+#banner-part .next{
+    font-size: 40px;
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 60px;
+    color: #fff;
+    
+}
+
+#banner-part .prev{
+    font-size: 40px;
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 60px;
+    color: #fff;
+}
+
+#banner-part i{
+    transition: .8s;
+}
+
+#banner-part i:hover{
+    color: red;
+}
+
+/*----------------------------------------
+        banner-part css end
+------------------------------------------*/
+
+/*----------------------------------------
+        banner-shape css start
+------------------------------------------*/
+
+#banner-shape{
+    
+    position: relative;
+}
+
+#banner-shape .shape{
+    height: 300px;
+    width: 100%;
+    background-color: red;
+    transform: skewX(-87deg);
+    position: absolute;
+    transform-origin: bottom left;
+    top: -300px;
+    background: #fff;
+}
+
+/*----------------------------------------
+        banner-shape css end
+------------------------------------------*/
+
+/*----------------------------------------
+        about-part css end
+------------------------------------------*/
+
+#about-part{
+    padding-top: 90px;
+    margin-bottom: 50px;
+}
+
+#about-part .title h2{
+    font-family: 'Fugaz One', cursive;
+    
+}
+
+#about-part .item{
+    width: 100%;
+    height: 200px;
+    background: #212529;
+    text-align: center;
+    padding: 40px 35px;
+    border-radius: 5px;
+    position: relative;
+    transition: .5s;
+}
+
+#about-part .item h2{
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+
+#about-part .item p{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+#about-part .item2{
+    width: 100%;
+    height: 200px;
+    background: #212529;
+    border-radius: 5px;
+    padding: 26px 12px;
+    text-align: right;
+    margin-top: 90px;
+    position: relative;
+    transition: .5s;
+}
+
+#about-part .item2 h2{
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+
+#about-part .item2 p{
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+#about-part .item2 .sizem{
+    font-size : 12px;
+}
+
+#about-part .item3{
+    width: 100%;
+    height: 200px;
+    background: #212529;
+    border-radius: 5px;
+    padding: 30px 40px;
+    text-align: center;
+    position: relative;
+    transition: .5s;
+}
+
+#about-part .right{
+    text-align: left;
+}
+
+#about-part .item3 h2{
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+
+#about-part .item3 p{
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+
+#about-part #triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #212529;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -9;
+    border-radius: 5px;
+}
+
+#about-part #triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid #212529;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -9;
+    border-radius: 5px;
+}
+
+
+#about-part #triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 100px solid #212529;
+    border-bottom: 50px solid transparent;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    LEFT: -20px;
+    z-index: -9;
+  }
+
+#about-part  #triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 100px solid #212529;
+    border-bottom: 50px solid transparent;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -20px;
+    z-index: -9;
+  }
+
+
+#about-part .image{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 2px solid ;
+    text-align: center;
+    line-height: 350px;
+    position: relative;
+    padding: 0;
+    margin-top: 0;
+    background: transparent !important;
+}
+
+#about-part .image img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+#about-part .dot1{
+    position: absolute;
+    bottom: -57px;
+    left: 168px;
+    z-index: 9;
+    transition: .5s;
+}
+
+#about-part .dot2{
+    position: absolute;
+    bottom: 91px;
+    right: -38px;
+    z-index: 9;
+    transition: .5s;
+}
+
+#about-part .dot3{
+    position: absolute;
+    bottom: 91px;
+    left: -38px;
+    z-index: 9;
+    transition: .5s;
+}
+
+#about-part .dot4{
+    position: absolute;
+    top: -57px;
+    left: 168px;
+    z-index: 9;
+    transition: .5s;
+}
+#about-part .item:hover{
+    box-shadow: 0px -30px 53px -46px #f81e1ebf;
+}
+
+#about-part .item2:hover{
+    box-shadow: 0px -30px 53px -46px #f81e1ebf;
+}
+
+#about-part .item3:hover{
+    box-shadow: 0px 31px 53px -46px #f81e1ebf;
+}
+
+#about-part .item:hover .dot1{
+    color: red
+}
+
+#about-part .item2:hover .dot2{
+    color: red
+}
+
+#about-part .item2:hover .dot3{
+    color: red
+}
+
+#about-part .item3:hover .dot4{
+    color: red
+}
+
+/*----------------------------------------
+        about-part css end
+------------------------------------------*/
+
+/*----------------------------------------
+        portfolio-part css start
+------------------------------------------*/
+
+#portfolio-part{
+    width: 100%;
+    background: url(../image/portfolio\ back.jpg)no-repeat center;
+    background-size: cover;
+    margin-top: 10px;
+    /* padding-top: 155px; */
+}
+
+#portfolio-part .overlay{
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#portfolio-part .overlay .title{
+    color: #fff;
+}
+
+#portfolio-part .overlay .title h2{
+    font-family: 'Fugaz One', cursive;
+}
+
+#portfolio-part .row .col-lg-3 .img{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+#portfolio-part .row .col-lg-3 .img img{
+    width: 100%;
+}
+
+#portfolio-part .row .col-lg-3 .img .overlay{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: .5s;
+}
+
+#portfolio-part .row .col-lg-3 .img .overlay i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 40px;
+    color: #fff;
+}
+
+#portfolio-part .row .col-lg-3 .img:hover .overlay{
+    transform: scale(1);
+}
+
+
+/*----------------------------------------
+        portfolio-part css end
+------------------------------------------*/
+
+/*----------------------------------------
+        portfolio-shape css start
+------------------------------------------*/
+
+#portfolio-shape{
+    position: relative;
+}
+
+#portfolio-shape .shape1{
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    position: absolute;
+    transform: skew(-267deg);
+    z-index: 9;
+    top: -1045px;
+    transform-origin: right top;
+}
+
+#portfolio-shape .shape2{
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    position: absolute;
+    transform: skew(-267deg);
+    z-index: 9;
+    bottom: 0px;
+    transform-origin: left bottom;
+}
+
+/*----------------------------------------
+        portfolio-shape css end
+------------------------------------------*/
+
+/*----------------------------------------
+        service-part css start
+------------------------------------------*/
+
+#service-part{
+    position: relative;
+}
+
+#service-part .title h2{
+    font-family: 'Fugaz One', cursive;
+}
+
+#service-part .line{
+    background: url(../image/line.png);
+    width: 1px;
+    height: 1000px;
+    position: absolute;
+    top: 161px;
+    left: 50%;
+}
+
+#service-part .container .item{
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#service-part .container .item2{
+    flex-direction: row-reverse;
+}
+
+#service-part .container .item .right{
+    width: 40%;
+    background: #f1f1f1;
+    position: relative;
+}
+
+#service-part .container .item .left h4{
+    font-size: 18px;
+    font-family: 'Fugaz One', cursive;
+    align-self: center;
+}
+
+#service-part .container .item .right p{
+    font-family: 'Open Sans', sans-serif;
+    padding: 60px 30px;
+}
+
+
+
+#service-part .container .item .right .triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-right: 100px solid #f1f1f1;
+  border-bottom: 50px solid transparent;
+  position: absolute;
+  top: 50%;
+  left: -38px;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+#service-part .container .item .right .triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 100px solid #f1f1f1;
+    border-bottom: 50px solid transparent;
+    position: absolute;
+    top: 50%;
+    right: -38px;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+#service-part .container .item .middle{
+    width: 10%;
+    display: flex;
+}
+
+#service-part .container .item .middle .img{
+    width: 70px;
+    height: 70px;
+    background: #eee;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto;
+    align-self: center;
+}
+
+#service-part .container .item .middle .img img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#service-part .container .item .left{
+    width: 40%;
+     display: flex;
+    justify-content: flex-end;
+}
+
+#service-part .container .item2 .left{
+    justify-content: flex-start;
+}
+
+#service-part .container .slick-current .middle .img{
+    transform: scale(1.5); 
+    background: red;
+    position: relative;
+}
+
+#service-part .container .middle .img i{
+    position:absolute;
+    top: 20%;
+    left:25%;
+    font-size: 40px;
+}
+
+#service-part .next{
+    border: 1px solid #000;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    transform: translateX(-50%);
+    transition: .5s;
+}
+
+#service-part .prev{
+    border: 1px solid #000;
+    position: absolute;
+    bottom: -219px;
+    left: 50%;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    transform: translateX(-50%);
+    transition: .5s;
+}
+
+#service-part .next:hover{
+    background: red;
+    border: 1px solid red;
+}
+
+#service-part .prev:hover{
+    background: red;
+    border: 1px solid red;
+}
+
+#service-part .container .slick-current .right{
+    box-shadow: 0px -30px 53px -46px;
+    transition: .4s
+} 
+
+
+/*----------------------------------------
+        service-part css end
+------------------------------------------*/
+
+/*----------------------------------------
+        testi-part css start
+------------------------------------------*/
+
+#testi-part{
+    width:100%;
+    height: 900px;
+    background: url(../image/testiimg.png) no-repeat center;
+    background-size: cover;
+    margin-top: 100px;
+}
+
+#testi-part .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6)
+}
+
+#testi-part .overlay .right{
+    width: 100%;
+    height: 700px;
+    margin-top: 60%;
+    z-index: 9;
+}
+
+#testi-part .overlay .right .item .img{
+    width: 100px !important;
+    height: 100px;
+    background: #fff;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+#testi-part .right .line{
+    position: relative;
+}
+
+#testi-part .line img{
+    position: absolute;
+    top: 107px;
+    height: 701px;
+    left: 94px;
+    z-index: 0;
+}
+
+
+#testi-part .overlay .right .slick-current .img{
+    background: red;
+    transform: scale(1.5);
+}
+
+#testi-part .overlay .right .slick-current .img .overly{
+    opacity: 0;
+}
+
+#testi-part .overlay .right .item .img img{
+    width: 100%;
+    margin-top: 10px;
+}
+
+#testi-part .overlay .right .item .img .overly{
+    width: 100% !important;
+    height: 100% !important;
+    background: rgba(255, 255, 255, .6);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#testi-part .overlay .left{
+    width: 100%;
+    height: 900px;
+}
+
+
+
+#testi-part .overlay .left .box{
+    width: 730px !important;
+    height: 100%;
+}
+
+#testi-part .overlay .left .text{
+    padding: 60px 50px;
+    padding-bottom: 60px;
+    text-align: left;
+    background: #f1f1f1;
+    position: relative; 
+    margin-top: 283px;
+}
+
+#testi-part .overlay .left .text h4{
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#testi-part .overlay .left .text i{
+    color: red
+}
+
+#testi-part .overlay .left .text h5{
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#testi-part .overlay .left .text p{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#testi-part .overlay .left .text .image{
+    margin-left: 484px;
+    margin-top: 40px;
+}
+
+#testi-part .overlay .left .text .quote{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#testi-part .overlay .square {
+    width: 30px;
+    height: 30px;
+    background: #f1f1f1;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    transform: rotate(45deg);
+}
+
+#testi-part .next{
+    border: 1px solid #fff;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    transform: translateX(-50%);
+    transition: .5s;
+    color: #fff;
+}
+
+#testi-part .prev{
+    border: 1px solid #fff;
+    position: absolute;
+    bottom: -52px;
+    left: 50%;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    transform: translateX(-50%);
+    transition: .5s;
+    color: #fff;
+}
+
+#testi-part .next:hover{
+    background: red;
+    border: 1px solid red;
+}
+
+#testi-part .prev:hover{
+    background: red;
+    border: 1px solid red;
+}
+
+/*----------------------------------------
+        testi-part css end
+------------------------------------------*/
+
+/*----------------------------------------
+        testi-shape css start
+-----------------------------------------*/
+
+
+
+#testi-shape{
+    position: relative;
+}
+
+#testi-shape .shape1{
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    position: absolute;
+    transform: skew(-267deg);
+    z-index: 9;
+    top: -907px;
+    transform-origin: right top;
+}
+
+#testi-shape .shape2{
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    position: absolute;
+    transform: skew(-267deg);
+    z-index: 9;
+    bottom: 0px;
+    transform-origin: left bottom;
+}
+
+/*----------------------------------------
+        testi-shape css end
+-----------------------------------------*/
+
+/*----------------------------------------
+        pricing-part css start
+-----------------------------------------*/
+
+#pricing-part{
+    padding-top: 216px;
+}
+
+#pricing-part .container .row .shape{
+    height: 550px;
+    background: #f1f1f1;
+    margin-top: 50px;
+    position: relative;
+    text-align: center;
+}
+
+#pricing-part .container .row .shape .membership{
+    clip-path: polygon(0px 0px, 100% 0, 100% 64%, 0 90%);
+    background: #353535;
+    transition: .6s;
+    color: #fff;
+}
+
+#pricing-part .container .row .shape .membership h3{
+    padding-top: 30px;
+    padding-bottom: 100px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Fugaz One', cursive;
+    text-transform: uppercase;
+}
+
+#pricing-part .container .row .shape .pricing{
+    padding-top: 40px;
+}
+
+#pricing-part .container .row .shape .pricing p{
+    color: #444444;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+#pricing-part .container .row .shape .join{
+    clip-path: polygon(0 36%, 100% 0, 100% 100%, 0% 100%);
+    background: #444444;
+    height: 80px;
+    transition: .6s;
+}
+
+#pricing-part .container .row .shape .join h4{
+    padding-top: 36px;
+    padding-bottom: 22px;
+}
+
+#pricing-part .container .row .shape .join a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+
+#pricing-part .container .row .shape .circle{
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    border: 1px solid #444444;
+    border-radius: 50%;
+    position: absolute;
+    top: 14%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .6s;
+}
+
+#pricing-part .container .row .shape .circle .price{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #444444;
+    margin-top: 4px;
+    margin-left: 4px;
+    transition: .6s;
+    color: #fff;
+}
+
+#pricing-part .container .row .shape .circle .month{
+    font-size: 10px;
+    font-family: 'Raleway', sans-serif;
+    padding-top: 10px;
+    
+}
+
+#pricing-part .container .row .shape .circle .price p{
+    
+    font-size: 22px;
+    font-family: 'Fugaz One', cursive;
+    margin-top: 0px;
+    margin-bottom: 0;
+    padding-top: 18px;
+}
+
+#pricing-part .container .row .shape:hover .membership{
+    background: red;
+    color: #111
+}
+
+#pricing-part .container .row .shape:hover .price{
+    background: red;
+    color: #111
+}
+
+#pricing-part .container .row .shape:hover .circle{
+    border: 1px solid red
+}
+
+#pricing-part .container .row .shape:hover .join{
+    background: red
+}
+
+#pricing-part .container .row .shape:hover .join a{
+    color: #111
+}
+
+/*----------------------------------------
+        pricing-part css end
+-----------------------------------------*/
+
+/*----------------------------------------
+        counter-part css start
+-----------------------------------------*/
+
+#counter-part{
+    background: url(../image/counterimg.png)no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 253px;
+    margin-top: 137px;
+    transform: skewY(-3deg);
+    position: relative;
+}
+
+#counter-part .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .9);
+}
+
+#counter-part .overlay .container .row .count{
+    border: 1px solid #fff;
+    position: absolute;
+    color: #fff;
+    top: 54px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 202px;
+}
+
+#counter-part .overlay .container .row .count .counter{
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#counter-part .overlay .container .row .count p{
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*----------------------------------------
+        counter-part css end
+-----------------------------------------*/
+/*----------------------------------------
+        team-part css start
+-----------------------------------------*/
+
+#team-part{
+    margin-top: 100px;
+}
+
+#team-part .member{
+    height: 380px;
+    width: 270px;
+    border: 2px solid #dddddd;
+    transition: .4s;
+}
+
+#team-part .member .image{
+    height: 280px;
+    width: 100%;
+    background: #f1f1f1;
+    clip-path: polygon(100% 0, 100% 84%, 0 100%, 0 0);
+    text-align: center;
+    position: relative;
+}
+
+#team-part .member .image img{
+    margin-top: 10px;
+}
+
+#team-part .member .image .overlay{
+    width: 100%;
+    height: 0%;
+    background: rgba(255, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .7s;
+    opacity: 0;
+}
+
+#team-part .member .image .overlay .none{
+    display: none;
+}
+
+#team-part .member .image .overlay .i-shape{
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+#team-part .member .image .overlay a{
+    color: #353535
+}
+
+#team-part .member .image .overlay .i-shape i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-self: center;
+}
+
+#team-part .member .txt{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#team-part .member .txt h2{
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+#team-part .member .txt p{
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif
+}
+
+#team-part .member .txt .icons{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    margin-top: -50px;
+    transition: .9s;
+}
+
+#team-part .member .txt .icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #404040;
+    margin: 14px;
+    position: relative;
+    color: #111;
+    display: none;
+    transition: .9s;
+}
+
+#team-part .member .txt .icon i{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    font-size: 18px
+}
+
+#team-part .member:hover{
+    height: 450px
+}
+
+#team-part .member:hover .icons{
+    margin-top: 20px;
+}
+
+#team-part .member:hover .icon{
+    display: block;
+}
+
+#team-part .member:hover .overlay{
+    height: 100%;
+    opacity: 1;
+}
+
+#team-part .member:hover .i-shape{
+    height: 40px;
+}
+
+#team-part .member .txt .icons .icon:hover{
+    background: red;
+    border: 1px solid red
+}
+
+
+/*----------------------------------------
+        team-part css end
+-----------------------------------------*/
+/*----------------------------------------
+        footer-top css start
+-----------------------------------------*/
+
+#footer-top{
+    width: 100%;
+    height: 100%;
+    background: #222;
+    transform: skewY(-3deg);
+    border-bottom: 1px solid #fff;
+    margin-top: 100px;
+}
+
+#footer-top .container .logo{
+    text-align: center;
+    padding: 50px 0;
+}
+
+#footer-top a{
+    display: inline-block;
+    transform: rotateX(20deg);
+}
+
+/*----------------------------------------
+        footer-top css end
+-----------------------------------------*/
+/*----------------------------------------
+        footer-part css start
+-----------------------------------------*/
+
+#footer-part{
+    width: 100%;
+    height: 410px;
+    background: #222;
+    margin-top: -60px;
+    
+}
+
+#footer-part .container .row .one{
+    width: 112%;
+    height: 130px;
+    margin-top: 107px;
+    text-align: center;
+    line-height: 130px;
+    position: relative;
+    padding-top: 60px;
+}
+
+#footer-part .container .row .one a{
+    text-decoration: none;
+}
+
+#footer-part .container .row .line{
+    border-right: 1px solid #fff
+}
+
+#footer-part .container .row .one .icon{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: red;
+    text-align: center;
+    line-height: 35px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#footer-part .container .row .one h6{
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    transition: .5s;
+}
+
+#footer-part .container .row .one h6 .block{
+    display: block
+}
+
+#footer-part .container .row .one h6:hover{
+    color: red
+}
+
+#footer-part .container .follow .title{
+    margin-top: 60px;
+    margin-bottom: 30px
+}
+
+#footer-part .container .follow{
+    position: relative;
+}
+
+#footer-part .container .follow .title h2{
+    color: #fff;
+    font-size: 20px;
+}
+
+#footer-part .container .follow .links{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#footer-part .container .follow .links .icon{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #fff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 20px;
+    transition: .5s;
+}
+
+#footer-part .container .follow .links .icon:hover{
+    background: red;
+}
+
+#footer-part .container .follow .links .no-mar{
+    margin-right: 0px;
+}
+
+#footer-part .container .follow .links a{
+    color: #222;
+}
+
+/*----------------------------------------
+        footer-part css end
+-----------------------------------------*/
+/*----------------------------------------
+        footer-bottom css start
+-----------------------------------------*/
+
+#footer-bottom{
+    width: 100%;
+    height: 60px;
+    background: #353535;
+    text-align: center;
+}
+
+#footer-bottom .txt p{
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    padding: 17px 0;
+    font-size: 13px
+}
+
+#footer-bottom .txt p a{
+    color: red;
+    text-decoration: none;
+}
+
+/*----------------------------------------
+        footer-bottom css end
+-----------------------------------------*/
+
+/*----------------------------------------
+        b-top css start
+-----------------------------------------*/
+
+.btop{
+    height: 60px;
+    padding: 20px;
+    background: red;
+    color: #fff;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 20px;
+    border-radius: 50%;
+    z-index: 9999;
+    visibility: hidden;
+    text-decoration: none;
+    border: 2px solid red;
+    transition: .6s;
+    line-height: 0;
+}
+
+.btop:hover{
+    text-decoration: none;
+    background: #fff;
+    color: red;
+    border: 2px solid red
+}
+
+/*----------------------------------------
+        b-top css end
+-----------------------------------------*/
+
+
+
+
+
+
+
